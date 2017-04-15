@@ -1,0 +1,53 @@
+﻿Master Page		(done)
+Home Page		(done)
+18 Acts page	(done)
+	--> (to add a suggestion bar)(to add complaint section)(to add relevent authority section)
+	take location from geolocation with HTML5
+	diaplay the relevent authority according to th location of the user.
+DataBase -> childActs
+	having tables
+		--> ActsTable		(done)(data entry left)
+			--$ ActID(pk)
+			--$ ActData
+			--$ ModifiedOn
+			--$ ModifiedBy
+		--> Authority Table
+			--$ ActID(fk)
+			--$ AuthID(pk)
+			--$ Regin
+			--$ Area
+			--$ Name
+			--$ ContactNumber
+			--$ EmailID
+			--$ officeAddress
+		--> Complaint Table
+			--$ AuthID (fk)
+			--$ ActID (fk)
+			--$ ComplaintNumber
+			--$ complaintID(pk)
+			--$ GivenBy
+			--$ Complaint
+			--$ proofpic(nullable)
+			--$ proofvideo(nullable)
+			--$ SubmittedOn
+	/*	--> Sugesstions
+			--$ ActID (fk)
+			--$ sugesstion 
+			--$ givenBy
+			--$ givenOn*/
+		--> AdminLogin
+			--$ Id (pk)
+			--$ Name
+			--$ Password
+			--$ Type
+
+login page for admin	(url access) (done)
+update acts page		(done)
+update authority page
+view suggestions page
+
+
+add search option
+for the tried act or problem facing
+
+FAQ

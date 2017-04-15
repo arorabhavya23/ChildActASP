@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: xx-large;
+        }
+        .auto-style2 {
+            width: 100px;
+            height: 321px;
+        }
+        .auto-style3 {
+            width: 800px;
+            height: 321px;
+        }
+        .auto-style4 {
+            height: 300px;
+            width: 300px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 35px">
+        
+            <p>
+                <span class="auto-style1"><strong>Government of India</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&nbsp;
+                <img alt="" src="\capture.jpg" style="height: 96px; width: 61px; vertical-align:top; "/><br />
+                </p>
+    </div>  <h2>Ministry of Women And Child Development </h2>
+        <p style="text-align: right">
+        <asp:TextBox ID="TextBox2" runat="server" Height="20px" style="text-align: left" Width="211px" placeholder ="Have a query feel free to ask it up"></asp:TextBox>&nbsp;&nbsp;&nbsp;
+        <asp:ImageButton ID="ImageButton1" runat="server" />
+            </p>
+        <br />
+
+    <div>
+        <table style="width: 1350px; margin-right: 0px;">
+            <tr>
+                <td class="auto-style2">
+                    <a href="\ActI.aspx">Act I</a><br />
+                    <a href="\ActII.aspx">Act II</a><br />
+                    <a href="\ActIII.aspx">Act III</a><br />
+                    <a href="\ActIV.aspx">Act IV</a><br />
+                    <a href="\ActV.aspx">Act V</a><br />
+                    <a href="\ActVI.aspx">Act VI</a><br />
+                    <a href="\ActVII.aspx">Act VII</a><br />
+                    <a href="\ActVIII.aspx">Act VIII</a><br />                    
+                    <a href="\ActIX.aspx">Act IX</a><br />
+                    <a href="\ActX.aspx">Act X</a><br />
+                    <a href="\ActXI.aspx">Act XI</a><br />
+                    <a href="\ActXII.aspx">Act XII</a><br />
+                    <a href="\ActXIII.aspx">Act XIII</a><br />
+                    <a href="\ActXIV.aspx">Act XIV</a><br />
+                    <a href="\ActXV.aspx">Act XV</a><br />
+                    <a href="\ActXVI.aspx">Act XVI</a><br />
+                    <a href="\ActXVII.aspx">Act XVII</a><br />
+                    <a href="\ActXVIII.aspx">Act XVIII</a></td>
+                <td class="auto-style3">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        <p style="width: 845px; height: 358px; margin-left: 0px;">
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style4">
+                    The Stakeholder info
+                    <br />
+                    <br />
+                    <br />
+                    <asp:TextBox ID="TextBox1" runat="server" Height="141px" Width="170px" placeholder ="Have Any Complaint Write it to us" TextMode="MultiLine"></asp:TextBox>
+                    <br />
+                    <br />Have any photograph as proof upload it here
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <br />OR
+                    <br />Have any Video as proof upload it here
+                    <asp:FileUpload ID="FileUpload2" runat="server" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="BtnSubmit" runat="server" Text="Submit Complaint" OnClick="BtnSubmit_Click" />
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
